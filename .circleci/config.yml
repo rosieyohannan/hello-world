@@ -1,14 +1,14 @@
-version: 2.1
-parameters:
-  image-tag:
-    type: string
-    default: "latest"
+ version: 2.1
+ parameters:
+   image-tag:
+     type: string
+     default: "latest"
     
-jobs:
-  build:
-    docker:
-      - image: circleci/node:<< pipeline.parameters.image-tag >>
-    environment:
-      IMAGETAG: << pipeline.parameters.image-tag >>
-    steps:
-    - run: echo "Image tag used was ${IMAGETAG}"
+ jobs:
+   build:
+     docker:
+       - image: circleci/node:<< pipeline.parameters.image-tag >>
+     environment:
+       IMAGETAG: << pipeline.parameters.image-tag >>
+     steps:
+       - run: echo "Image tag used was ${IMAGETAG}"
