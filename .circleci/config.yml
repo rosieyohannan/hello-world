@@ -2,16 +2,16 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/<language>:<version TAG>
+      - image: circleci/node:7.10
     steps:
       - checkout
-      - run: <command>
+      - run: echo "build build build"
   test:
     docker:
-      - image: circleci/<language>:<version TAG>
+      - image: circleci/node:7.10
     steps:
       - checkout
-      - run: <command>
+      - run: echo "test test test"
 workflows:
   version: 2
   build_and_test:
