@@ -13,7 +13,7 @@ jobs:
     steps:
       - checkout
       - run: echo "test test test"
-      - run: sleep 25
+      - run: sleep 28
 workflows:
   version: 2
   build_and_test:
