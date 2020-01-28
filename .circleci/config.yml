@@ -13,5 +13,5 @@ jobs:
     steps:
       - checkout
       - run: echo "test test test"
-      - run: sleep 30
+      - run: sleep 25
 
