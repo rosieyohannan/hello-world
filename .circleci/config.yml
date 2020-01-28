@@ -6,7 +6,7 @@ jobs:
     steps:
       - checkout
       - run: echo "build build build"
-      - run: sleep 30
+      - run: sleep 35
   test:
     docker:
       - image: circleci/node:7.10
@@ -14,4 +14,3 @@ jobs:
       - checkout
       - run: echo "test test test"
       - run: sleep 25
-
