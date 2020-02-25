@@ -3,10 +3,13 @@ jobs:
   build:
     docker:
       - image: circleci/node:7.10
+    environment:
+      FOO: barrrrrrr
     steps:
       - checkout
       - run: echo "build build build"
       - run: sleep 25
+      - run: echo "$FOO"
   test:
     docker:
       - image: circleci/node:7.10
